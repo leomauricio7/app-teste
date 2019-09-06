@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Camêra</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <img src="{{ photo }}" />
+    </ion-card-content>
+  </ion-card>
+  <!-- <ion-button expand="full" (click)="takePicture()">
+    <ion-icon name="camera"></ion-icon> Tirar Foto
+  </ion-button> -->
+</ion-content>
+
+<ion-footer padding>
+  <ion-button expand="full" color="light" (click)="takePicture()">
+    <ion-icon name="camera"></ion-icon> Tirar Foto
+  </ion-button>
+</ion-footer>
